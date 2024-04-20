@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 30%, 30%, 30%, 30%;
+    grid-template-rows: 30%, 30%, 30%, 30%;
+    background-image: linear-gradient(purple, white);
+}
+
+/* this takes away that purple underlined look on all the hyperlinks */
+a {
+    text-decoration: none;
+    color: black
+}
+
+/* this makes all product titles have a thinner look */
+h3 {
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+/* this sets the size of all product images */
+img {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+/* this sets all the button properties */
+button {
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    margin-top: 20px;
+    background-color: lightgray;
+    font-weight: bold;
+    margin-left: 100px;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+#price {
+    color: blue;
+}
+
+/* this puts the Credit Made Simple Book at the top left */
+#Simple-credit {
+    grid-area: 1/1/2/2;
+}
+
+/* this puts the bluetooth adapter next to the credit made simple book */
+#Bluetooth {
+    grid-area: 1/2/2/3;
+}
+
+/* this put the brown shoes next to the bluetooth adapter */
+#brown-shoes {
+    grid-area: 1/3/2/4;
+}
+
+/* this puts the black shoes right next to the brown shoes */
+#black-shoes {
+    grid-area: 1/4/2/5;
+}
+
+/* this puts the blue blazer at the bottom left corner */
+#blue-blazer {
+    grid-area: 2/1/3/2;
+}
+
+/* this puts the security cams next to the blue blazer */
+#Security-cams {
+    grid-area: 2/2/3/3;
+}
+
+/* this puts the force unleashed game next to the security cams */
+#force-unleashed {
+    grid-area: 2/3/3/4;
+}
+
+/* this puts the KOTOR game right next to the force unleashed game */
+#KOTOR {
+    grid-area: 2/4/3/5;
+}
+
+/* this spaces out every product */
+section {
+    margin: 50px;
+}
+
+/* the media tag below is for when the  website is on a tablet */
+
+@media screen and (min-width: 430px) and (max-width: 900px) {
+    body {
+        display: grid;
+        grid-template-columns: 50%, 50%;
+        grid-template-rows: 50%, 50%, 50%, 50%;
+        background-image: linear-gradient(purple, white);
+    }
+
+    /* this takes away that purple underlined look on all the hyperlinks */
+    a {
+        text-decoration: none;
+        color: black
+    }
+
+    /* this makes all product titles have a thinner look */
+    h3 {
+        font-weight: lighter;
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    /* this sets the size of all product images */
+    img {
+        width: 300px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+    /* this sets all the button properties */
+    button {
+        padding: 15px;
+        border-radius: 25px;
+        border: none;
+        margin-top: 20px;
+        background-color: lightgray;
+        font-weight: bold;
+    }
+
+    /* this styling is for the product descriptions */
+    p {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    /* this gives all the prices a blue color */
+    #price {
+        color: blue;
+    }
+
+    /* this puts the Credit Made Simple Book at the top left */
+    #Simple-credit {
+        grid-area: 1/1/2/2;
+    }
+
+    /* this puts the bluetooth adapter next to the credit made simple book */
+    #Bluetooth {
+        grid-area: 1/2/2/3;
+    }
+
+    /* this put the brown shoes next to the bluetooth adapter */
+    #brown-shoes {
+        grid-area: 2/1/2/3;
+    }
+
+    /* this puts the black shoes right next to the brown shoes */
+    #black-shoes {
+        grid-area: 2/2/2/3;
+    }
+
+    /* this puts the blue blazer at the bottom left corner */
+    #blue-blazer {
+        grid-area: 3/1/4/2;
+    }
+
+    /* this puts the security cams next to the blue blazer */
+    #Security-cams {
+        grid-area: 3/2/4/3;
+    }
+
+    /* this puts the force unleashed game next to the security cams */
+    #force-unleashed {
+        grid-area: 4/1/5/2;
+    }
+
+    /* this puts the KOTOR game right next to the force unleashed game */
+    #KOTOR {
+        grid-area: 4/2/5/3;
+    }
+
+    /* this spaces out every product */
+    section {
+        margin: 50px;
+    }
+}
+
+
+/* the media tag below is for when the  website is on a cell phone */
+@media screen and (min-width: 300px) and (max-width: 430px) {
+    body {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: repeat(50%, 50%, 50%, 50%, 50%, 50%, 50%, 50%);
+        background-image: linear-gradient(purple, white);
+    }
+
+    /* this takes away that purple underlined look on all the hyperlinks */
+    a {
+        text-decoration: none;
+        color: black
+    }
+
+    /* this makes all product titles have a thinner look */
+    h3 {
+        font-weight: lighter;
+        margin-bottom: 12px;
+    }
+
+    /* this sets the size of all product images */
+    img {
+        width: 150px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* this sets all the button properties */
+    button {
+        padding: 10px 30px;
+        border-radius: 15px;
+        border: none;
+        margin-top: 20px;
+        background-color: lightgray;
+        font-weight: bold;
+        font-size: 15px;
+        transform: translate(-100px, 0);
+    }
+
+    /* this styling is for the product descriptions */
+    p {
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    /* this gives all the prices a blue color */
+    #price {
+        color: blue;
+    }
+
+    /* this puts the Credit Made Simple Book at the top left */
+    #Simple-credit {
+        grid-area: 1/1/2/2;
+    }
+
+    /* this puts the bluetooth adapter next to the credit made simple book */
+    #Bluetooth {
+        grid-area: 2/1/3/2;
+    }
+
+    /* this put the brown shoes next to the bluetooth adapter */
+    #brown-shoes {
+        grid-area: 3/1/4/1;
+    }
+
+    /* this puts the black shoes right next to the brown shoes */
+    #black-shoes {
+        grid-area: 4/1/5/2;
+    }
+
+    /* this puts the blue blazer at the bottom left corner */
+    #blue-blazer {
+        grid-area: 5/1/6/2;
+    }
+
+    /* this puts the security cams next to the blue blazer */
+    #Security-cams {
+        grid-area: 6/1/7/2;
+    }
+
+    /* this puts the force unleashed game next to the security cams */
+    #force-unleashed {
+        grid-area: 7/1/8/2;
+    }
+
+    /* this puts the KOTOR game right next to the force unleashed game */
+    #KOTOR {
+        grid-area: 8/1/9/2;
+    }
+
+    /* this spaces out every product */
+    section {
+        margin: 50px;
+        text-align: center;
+        /* position: relative; */
+    }
+}

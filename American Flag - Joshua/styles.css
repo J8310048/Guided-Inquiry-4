@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* this centers the flag above */
+table {
+    margin: auto;
+}
+
+/* this helps the stripes be stacked on top of one another*/
+tr {
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling for the red stripes */
+.red {
+    background-color: red;
+    padding: 30px;
+    border: 1px black solid;
+    min-width: 850px;
+}
+
+/* styling for the white stripes */
+.white {
+    background-color: white;
+    padding: 30px;
+    border: 1px black solid;
+    min-width: 850px;
+}
+
+/* this helps position the stars at the top left corner */
+#stars-back {
+    background-color: darkblue;
+    position: absolute;
+    padding: 30px;
+    width: 600px;
+    height: 373px;
+    border: 1.5px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transform: translate(-31px, -31px);
+}
+
+/* styling for all 50 stars */
+.star1,
+.star2,
+.star3,
+.star4,
+.star5,
+.star6,
+.star7,
+.star8,
+.star9,
+.star10,
+.star11,
+.star12,
+.star13,
+.star14,
+.star15,
+.star16,
+.star17,
+.star18,
+.star19,
+.star20,
+.star21,
+.star22,
+.star23,
+.star24,
+.star25,
+.star26,
+.star27,
+.star28,
+.star29,
+.star30,
+.star31,
+.star32,
+.star33,
+.star34,
+.star35,
+.star36,
+.star37,
+.star38,
+.star39,
+.star40,
+.star41,
+.star42,
+.star43,
+.star44,
+.star45,
+.star46,
+.star47,
+.star48,
+.star49,
+.star50 {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Here are the stylings I used for the divs if you want to take a look. */
+
+/* this styling centers the flag */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    border: 1px black solid;
+    transform: translate(0px, 500px);
+}
+
+/* This is for the background of the stars. Also helps space out the stars */
+.stars-background {
+    background-color: darkblue;
+    position: absolute;
+    padding: 30px;
+    width: 600px;
+    height: 373px;
+    border: 1.5px black solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* styling for the red stripe */
+.stripe1 {
+    background-color: red;
+    padding: 30px;
+    border: 1px black solid;
+}
+
+/* styling for the white stripe */
+.stripe2 {
+    background-color: white;
+    padding: 30px;
+    border: 1px black solid;
+}
